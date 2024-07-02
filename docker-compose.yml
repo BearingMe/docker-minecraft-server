@@ -2,20 +2,12 @@ services:
   mc:
     image: itzg/minecraft-server
     environment:
-      EULA: "true"
-      MODE: "survival"
-      PVP: "true"
-      SERVER_NAME: "TabernaPlay"
-      DIFFICULTY: "hard"
-      WHITELIST: |
-        smith
-        gado
-        pomboxx
-        lisinha
-        4444
-        imenso
-        casado
-        tuxo 
+      EULA: true  # Ensure you have agreed to the Minecraft EULA
+      MODE: survival
+      PVP: true
+      SERVER_NAME: TabernaPlay
+      DIFFICULTY: hard
+      ONLINE_MODE: false
     ports:
       - "25565:25565"
     volumes:
