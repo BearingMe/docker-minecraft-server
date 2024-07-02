@@ -7,16 +7,7 @@ services:
       PVP: true
       SERVER_NAME: TabernaPlay
       DIFFICULTY: hard
-      ONLINE_MODE: false
-      WHITELIST: |
-        smith
-        gado
-        pomboxx
-        lisinha
-        4444
-        imenso
-        casado
-        tuxo 
+      ENABLE_WHITELIST: false
     ports:
       - "25565:25565"
     volumes:
