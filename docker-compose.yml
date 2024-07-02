@@ -7,6 +7,15 @@ services:
       PVP: "true"
       SERVER_NAME: "TabernaPlay"
       DIFFICULTY: "hard"
+      WHITELIST: |
+        smith
+        gado
+        pomboxx
+        lisinha
+        4444
+        imenso
+        casado
+        tuxo 
     ports:
       - "25565:25565"
     volumes:
