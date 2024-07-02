@@ -3,6 +3,10 @@ services:
     image: itzg/minecraft-server
     environment:
       EULA: "true"
+      MODE: "survival"
+      PVP: "true"
+      SERVER_NAME: "TabernaPlay"
+      DIFFICULTY: "hard"
     ports:
       - "25565:25565"
     volumes:
@@ -10,5 +14,6 @@ services:
     stdin_open: true
     tty: true
     restart: unless-stopped
+
 volumes:
   data: {}
